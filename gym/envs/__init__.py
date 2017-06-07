@@ -1,5 +1,13 @@
 from gym.envs.registration import registry, register, make, spec
 
+
+# My environments
+# ---------------------------------------
+register(
+    id='ExploreGraph-v0',
+    entry_point='gym.envs.my_envs:ExploreGraphEnv'
+)
+
 # Algorithmic
 # ----------------------------------------
 

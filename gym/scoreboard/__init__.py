@@ -24,6 +24,14 @@ web_base = os.environ.get('OPENAI_GYM_WEB_BASE', 'https://gym.openai.com')
 
 # groups
 
+# added by gray-m
+add_group(
+    id='my_envs',
+    name='My Envs',
+    description='Test'
+)
+
+
 add_group(
     id='classic_control',
     name='Classic control',
@@ -76,6 +84,15 @@ add_group(
     id='safety',
     name='Safety',
     description='Environments to test various AI safety properties.'
+)
+
+
+# my envs
+add_task(
+    id='ExploreGraph-v0',
+    group='my_envs',
+    summary='avoid random walkers on a grid',
+    description='Nothing to see here'
 )
 
 # classic control
